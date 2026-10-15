@@ -319,27 +319,19 @@ function isMobileDevice() {
 }
 
 function adminTheme(){
-  $theme=general()->adminTheme.'.';
-  if(isMobileDevice()){
-    $theme=general()->adminTheme.'.';
-  }
-  return $theme;
+  return assetLinkAdmin().'.';
 }
 
 function welcomeTheme(){
-  $theme=general()->theme.'.';
-  if(isMobileDevice()){
-    $theme=general()->theme.'.';
-  }
-  return $theme;
+  return assetLink().'.';
 }
 
 function assetLink(){
-  return general()->theme;
+  return general()->theme ?: 'welcome';
 }
 
 function assetLinkAdmin(){
-  return general()->adminTheme;
+  return general()->adminTheme ?: 'admin';
 }
 
 function geoData($type=null,$parent=null,$id=null){

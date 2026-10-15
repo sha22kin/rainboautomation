@@ -48,7 +48,6 @@
      <!-- END: Custom CSS-->
 
      <!-- BEGIN: Theme JS-->
-     <script src="{{asset(assetLinkAdmin().'/app-assets/js/JsBarcode.all.js')}}"></script>
 
     <meta http-equiv='cache-control' content='no-cache'>
     <meta http-equiv='expires' content='0'>
@@ -302,7 +301,6 @@
      <!-- Drag dropable data  -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-    <script src="{{asset(assetLinkAdmin().'/app-assets/js/printThis.js')}}"></script>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
      <!-- BEGIN: Page JS-->
@@ -444,14 +442,6 @@
             
         });
           
-
-        $('#PrintAction').on("click", function () {
-            $('.PrintAreaContact').printThis();
-          });
-
-        $('#PrintAction2').on("click", function () {
-            $('.PrintAreaContact2').printThis();
-          });
 
          $.ajaxSetup({
               headers: {
